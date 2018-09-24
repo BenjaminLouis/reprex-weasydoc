@@ -1,0 +1,18 @@
+---
+lang: fr
+output: 
+  weasydoc::hpdf_document_base:
+    engine: "weasyprint"
+    keep_html: true
+---
+  
+```{r setup, include=FALSE}
+library(htmltools)
+tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+<i class=\"fa fa-envelope\"></i>
+
+
+`r HTML("<i class=\"fa fa-envelope\"></i>")` 
+
